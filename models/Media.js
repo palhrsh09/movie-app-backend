@@ -2,14 +2,14 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
 const Media = sequelize.define('Media', {
-  id: {
-    type: DataTypes.INTEGER,
-    autoIncrement: true,
+    id: {
+    type: DataTypes.UUID, 
+    defaultValue: DataTypes.UUIDV4, 
     primaryKey: true,
   },
   title: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: false, 
   },
   type: {
     type: DataTypes.ENUM('Movie', 'TV Show'),
