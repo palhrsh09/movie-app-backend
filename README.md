@@ -1,6 +1,11 @@
+Sure! Here's the full updated **README.md** content:
+
+```markdown
 # 🎬 Media Manager Backend
 
 This is the backend of the Media Manager App. It provides a RESTful API to manage a media catalog including Movies and TV Shows. Built with **Node.js**, **Express.js**, **Sequelize ORM**, and **MySQL**, and structured using **MVC architecture**.
+
+> 🔐 User authentication wasn't required in the task file, so I have added **rate limiting** to enhance security and protect the API.
 
 ---
 
@@ -17,22 +22,22 @@ This is the backend of the Media Manager App. It provides a RESTful API to manag
 
 ## 🗂 Project Structure
 
+```
+
 backend/
 ├── config/
-│ └── database.js # Sequelize DB connection
+│   └── database.js          # Sequelize DB connection
 ├── models/
-│ └── Media.js # Media model definition
+│   └── Media.js             # Media model definition
 ├── controllers/
-│ └── mediaController.js # Business logic for API
+│   └── mediaController.js   # Business logic for API
 ├── routes/
-│ └── mediaRoutes.js # API route definitions
-├── app.js # Express app setup
-├── server.js # App entry point
-└── .env # Environment variables
+│   └── mediaRoutes.js       # API route definitions
+├── app.js                   # Express app setup
+├── server.js                # App entry point
+└── .env                     # Environment variables
 
-yaml
-Copy
-Edit
+````
 
 ---
 
@@ -49,7 +54,11 @@ budget:    STRING (Required)
 location:  STRING (Required)
 duration:  STRING (Required)
 year:      STRING (Required)
-Defined in: models/Media.js
+````
+
+---
+
+## 📡 API Endpoints
 
 | Method | Endpoint            | Description           |
 | ------ | ------------------- | --------------------- |
